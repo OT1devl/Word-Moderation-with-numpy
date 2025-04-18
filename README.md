@@ -1,4 +1,4 @@
-h1 align="center">Word Moderation with Numpy</h1>
+<h1 align="center">Word Moderation with Numpy</h1>
 <h3 align="center">🧠 Neural Network for Word Moderation Based on Character-level Classification</h3>
 
 <p align="center">
