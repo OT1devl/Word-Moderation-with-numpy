@@ -82,14 +82,12 @@ def generate_leetspeak_variants(word, num_variants=3):
     possible_replacements = []
     for c in word:
         lower_c = c.lower()
-        # siempre incluimos el carácter original 'c'
         if lower_c in replacements:
             char_options = [c] + replacements[lower_c]
         else:
             char_options = [c]
         possible_replacements.append(char_options)
 
-    # todas las combinaciones posibles
     all_combinations = list(itertools.product(*possible_replacements))
     variants = [''.join(comb) for comb in all_combinations]
 
@@ -109,7 +107,6 @@ def load_dataset_compact_json(path, tokenizer, max_len, augment=False, num_varia
             for variant in variants:
                 texts.append(variant)
                 labels.append([int(label)])
-    # print(texts)
     tokenizer.build_vocab(texts)
 
     X = np.array([tokenizer.encode(t, max_len) for t in texts])
