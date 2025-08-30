@@ -25,8 +25,3 @@ This repository contains an implementation of a classical neural network with em
 ### 🛠️ **Technologies Used**
 - **Python**
 - **NumPy**
-
----
-
-### 📱 **Contact**
-📧 **Email:** *[otidevv1@gmail.com](mailto:otidevv1@gmail.com)* 
